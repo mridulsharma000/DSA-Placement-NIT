@@ -24,9 +24,11 @@ int main(){
         
     }
     
-    ip: 211918
-    op: two one one nine one eight
+   // ip: 211918
+  //  op: two one one nine one eight
     
+// Agar bhai ye tujhe ulta print karna hai toh cout wale statemwnt ko recursion call ke pehle laga
+
     #include<iostream>
 using namespace std;
 
@@ -54,5 +56,5 @@ int main(){
         
     }
     
-    ip: 211918
-    op: eight one nine one one two
+ //   ip: 211918
+ //   op: eight one nine one one two
