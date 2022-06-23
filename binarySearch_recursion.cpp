@@ -3,6 +3,7 @@ using namespace std;
 
 void print(int arr[], int s, int e) {
 //To show how it's working
+	cout<<"array is:"<<endl;
     for(int i=s; i<=e; i++) {
         cout << arr[i] << " ";
     } cout << endl;
@@ -39,3 +40,14 @@ int main() {
 	cout<<ans;
 	return 0;
 }
+
+
+// ip: 1
+//op: 
+// array is:
+// 2 4 6 8 9 
+// array is:
+// 2 4 
+// array is:
+
+// -1  (Not Found Matlb)
