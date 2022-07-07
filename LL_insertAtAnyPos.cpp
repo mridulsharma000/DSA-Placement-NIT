@@ -25,6 +25,9 @@ void insertT(Node* &tail, int d){
 }
 
 void insertPos(Node* &head, int position, int d){
+	if(position==1){
+	insertH(head, d);
+    }//Newly added
     Node*temp = head;
     int cnt=1; //starting Node 1 se hai
     while(cnt<position-1){
@@ -61,3 +64,10 @@ int main() {
 	print(head);
 	return 0;
 }
+
+// 1st position pe add nhi ho paayega is code se kuch kyuki cnt =1 se hi start kiya hai
+
+// Uske liye: 
+// if(position==1){
+// 	insertH(head, d);
+// }
