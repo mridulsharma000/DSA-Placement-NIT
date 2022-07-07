@@ -24,7 +24,8 @@ void insertT(Node* &tail, int d){
     tail=tail->next;
 }
 
-void insertPos(Node* &head, int position, int d){
+void insertPos(Node* &tail/*Agr tail pe kr rhe h toh*/,Node* &head, int position, int d){
+	//Inserting at position 1
 	if(position==1){
 	insertH(head, d);
         return;
@@ -35,6 +36,10 @@ void insertPos(Node* &head, int position, int d){
         temp= temp->next;
         cnt++;
     }
+	//inserting at the last position
+	if(temp->next ==NULL){
+		insertT(tail,d);
+		return;}
     //creating a node for d
     Node* NodeToInsert= new Node(d);
     NodeToInsert-> next = temp->next;
