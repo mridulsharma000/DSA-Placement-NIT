@@ -27,6 +27,7 @@ void insertT(Node* &tail, int d){
 void insertPos(Node* &head, int position, int d){
 	if(position==1){
 	insertH(head, d);
+        return;
     }//Newly added
     Node*temp = head;
     int cnt=1; //starting Node 1 se hai
